@@ -6,11 +6,10 @@ using System.Linq;
 
 namespace DialogueStuff {
     public class OptionManager {
-        public bool OptionsEnded = true;
+        
         public DialogueSequence targetEvent;
 
         public void StartOptions(Options options) {
-            OptionsEnded = false;
             int index = 0;
             int targetIndex;
 
