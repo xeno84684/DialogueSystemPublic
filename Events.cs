@@ -6,6 +6,9 @@ using DialogueStuff;
 
 namespace TextRPG {
     public static class Events {
+        
+        public static List<DialogueSequence> dialogueSequences = new List<DialogueSequence>();
+        
         public static DialogueSequence felix = new DialogueSequence() {
             Name = "Felix"
         };
@@ -60,6 +63,12 @@ namespace TextRPG {
                 {"Another option which leads to same sequence cuz i was too lazy to define another sequence", John}
             });   
         }
+        
+        public static void AddToList() {
+            dialogueSequences.Add(felix);
+            dialogueSequences.Add(John);
+        }
+
 
         public static void SetupAndStart() {
             DefineDialogues();
